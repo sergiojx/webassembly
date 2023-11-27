@@ -1,2 +1,3 @@
 # node.js, webassembly, rust and C++
-## vagrant
+## vagrant cli
+https://developer.hashicorp.com/vagrant/docs/cli
