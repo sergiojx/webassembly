@@ -1,0 +1,14 @@
+{
+  "name": "rustwebassembly",
+  "version": "0.1.0",
+  "files": [
+    "rustwebassembly_bg.wasm",
+    "rustwebassembly.js",
+    "rustwebassembly.d.ts"
+  ],
+  "module": "rustwebassembly.js",
+  "types": "rustwebassembly.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

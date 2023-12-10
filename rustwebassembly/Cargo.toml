@@ -1,0 +1,18 @@
+[package]
+name = "rustwebassembly"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# wasm-pack uses wasm-bindgen , another tool, to provide a bridge between the types of JavaScript and Rust.
+# It allows JavaScript to call a Rust API with a string, or a Rust function to catch a JavaScript exception.
+[dependencies]
+wasm-bindgen = "0.2"
+web-sys = { version = "0.3.60", features = ['console']}
+
+# The library target defines a “library” that can be used and linked by other libraries and executables.
+# The filename defaults to src/lib.rs, and the name of the library defaults to the name of the package.
+# A package can have only one library. The settings for the library can be customized in the [lib] table in Cargo.toml.
+[lib]
+crate-type = ["cdylib", "rlib"]
